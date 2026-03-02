@@ -20,6 +20,11 @@ class Vector:
     def __repr__(self):
         return f"(X:{self.x}, Y:{self.y})"
 
+    def __len__(self):
+        return 200
+
+    def __call__(self):
+        print("Vector __call__")
 
 
 v1 = Vector(10, 20)
